@@ -5,17 +5,26 @@ def get_path(filename)
 end
 
 class Motor # TODO: move to module
+
+  attr_reader :data
+
   def initialize(filename)
     @data = CSV.read(get_path(filename), headers: true)
-    p @data[0]
   end
 
-  def find(speed: nil, torque: nil, current: nil, input_power: nil, output_power: nil, efficiency: nil, lost_power: nil)
+  def find(colname, value)
+    value = value.to_i
+    colname = colname.to_s
 
-  end
+    best_row = @data[0]
 
-  def search(colname, value)
+    @data.each do |row|
+      if (row[colname].to_i - value).abs < (best_row[colname].to_i - value).abs
+        best_row = row
+      end
+    end
 
+    best_row
   end
 end
 
