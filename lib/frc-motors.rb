@@ -10,13 +10,13 @@ module Motors
     end
 
     def find(colname, value)
-      value = value.to_i
+      value = value.to_f
       colname = colname.to_s
 
       best_row = @data[0]
 
       @data.each do |row|
-        if (row[colname].to_i - value).abs < (best_row[colname].to_i - value).abs
+        if (row[colname].to_f - value).abs < (best_row[colname].to_f - value).abs
           best_row = row
         end
       end
