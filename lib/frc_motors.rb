@@ -1,7 +1,7 @@
 require 'csv'
 
-
 module Motors
+  # main class
   class Motor
     attr_reader :data
 
@@ -16,18 +16,17 @@ module Motors
       best_row = @data[0]
 
       @data.each do |row|
-        if (row[colname].to_f - value).abs < (best_row[colname].to_f - value).abs
-          best_row = row
-        end
+        best_row = row if (row[colname].to_f - value).abs <
+                          (best_row[colname].to_f - value).abs
       end
 
       best_row
     end
 
     def get_path(filename)
-      File.dirname(File.expand_path(__FILE__))+"/../data/#{filename}.csv"
+      File.dirname(File.expand_path(__FILE__)) + "/../data/#{filename}.csv"
     end
   end
 
-  CIM = Motor.new("cim")
+  CIM = Motor.new('cim')
 end
