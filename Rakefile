@@ -7,17 +7,17 @@ task :build do
 end
 
 task :install do
-    sh "gem install example-" + IO.read('version.txt') + ".gem" #FIXME
+    sh "gem install frc-motors-" + IO.read('version.txt') + ".gem"
 end
 
 task :clean do
-    sh "gem uninstall example" #FIXME
+    sh "gem uninstall frc-motors"
     sh "rm *.gem"
 end
 
 task :test do
-    sh "./test/test-example.rb" #FIXME
-    sh "rubocop lib/example.rb" #FIXME
+    sh "./test/test-frc-motors.rb"
+    sh "rubocop lib/frc-motors.rb"
 end
 
 task :publish do
@@ -33,5 +33,5 @@ task :publish do
     sh "github_changelog_generator"
     sh "git commit -am \"Update Changelog\""
     sh "git push origin master"
-    sh "gem push example-" + IO.read('version.txt') + ".gem" #FIXME
+    sh "gem push frc-motors-" + IO.read('version.txt') + ".gem"
 end
