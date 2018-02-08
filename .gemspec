@@ -1,15 +1,14 @@
 Gem::Specification.new do |s|
-    s.name          = '' #FIXME
+    s.name          = 'frc-motors'
     s.version       = IO.read('version.txt')
     s.license       = 'MIT'
-    s.summary       = '' #FIXME
-    s.description   = '' #FIXME
-    s.homepage      = 'https://github.com/karagenit/' #FIXME
+    s.summary       = 'FRC Motor Data'
+    s.description   = 'DC Motor Specification Lookup Tables for Vex/FRC Legal Motors'
+    s.homepage      = 'https://github.com/karagenit/frc-motors'
     s.author        = 'Caleb Smith'
     s.email         = 'karagenit@outlook.com'
-    s.files         = ['lib/example.rb'] #FIXME
-    s.require_paths = ['lib/', 'bin/'] #FIXME
-    s.executables   << 'example' #FIXME
+    s.files         = ['lib/frc-motors.rb'] + Dir.glob('data/*')
+    s.require_paths = ['lib/', 'data/']
     s.platform      = Gem::Platform::RUBY
 
     s.add_development_dependency 'rubocop',                     '~> 0.49'
