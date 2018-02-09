@@ -6,7 +6,7 @@ module Motors
     attr_reader :data
 
     def initialize(filename)
-      @data = CSV.read(get_path(filename), headers: true)
+      @data = CSV.read(get_path(filename), { headers: true, converters: :float })
     end
 
     def find(colname, value)
