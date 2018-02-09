@@ -26,5 +26,6 @@ module Motors
     end
   end
 
-  CIM = Motor.new("cim")
+  CIM = Motor.new('cim')
+  MiniCIM = Motor.new('mini-cim')
 end
