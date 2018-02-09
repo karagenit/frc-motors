@@ -15,4 +15,10 @@ class TestQuery < Test::Unit::TestCase
     assert_not_nil Motors::MiniCIM.data
     assert_not_nil Motors::MiniCIM.find(:torque, 0.7)
   end
+
+  def test_bag
+    assert_not_nil Motors::BAG
+    assert_not_nil Motors::BAG.data
+    assert_not_nil Motors::BAG.find(:torque, 0.3)
+  end
 end

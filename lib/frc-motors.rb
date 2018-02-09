@@ -6,7 +6,7 @@ module Motors
     attr_reader :data
 
     def initialize(filename)
-      @data = CSV.read(get_path(filename), { headers: true, converters: :float , header_converters: :symbol})
+      @data = CSV.read(get_path(filename), { headers: true, converters: :float , header_converters: :symbol })
     end
 
     def find(colname, value)
@@ -28,4 +28,5 @@ module Motors
 
   CIM = Motor.new('cim')
   MiniCIM = Motor.new('mini-cim')
+  BAG = Motor.new('bag')
 end
