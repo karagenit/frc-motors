@@ -20,10 +20,10 @@ $ gem install frc-motors
 => #<Motors::Motor:0x0056418b6e3408 @data=#<CSV::Table mode:col_or_row row_count:102>>
 
 > Motors::CIM.find(:torque, 1.2)
-=> #<CSV::Row "speed":"2665" "torque":"1.2065" "current":"66.878" "input power":"802.536" "output power":"336.708" "efficiency":"41.956" "lost power":"465.828">
+=> #<CSV::Row speed:2665 torque:1.2065 current:66.878 input power:802.536 output power:336.708 efficiency:41.956 lost power:465.828>
 
-> Motors::CIM.find(:torque, 1.2)['current']
-=> "66.878"
+> Motors::CIM.find(:torque, 1.2)[:current]
+=> 66.878
 
 > Motors::CIM.data
 => #<CSV::Table mode:col_or_row row_count:102>
