@@ -6,13 +6,10 @@ module Motors
     attr_reader :data
 
     def initialize(filename)
-      @data = CSV.read(get_path(filename), { headers: true, converters: :float })
+      @data = CSV.read(get_path(filename), { headers: true, converters: :float , header_converters: :symbol})
     end
 
     def find(colname, value)
-      value = value.to_f
-      colname = colname.to_s
-
       best_row = @data[0]
 
       @data.each do |row|
