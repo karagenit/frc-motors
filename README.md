@@ -1,5 +1,10 @@
 # frc-motors
 
+[![Travis CI](https://img.shields.io/travis/karagenit/frc-motors.svg?style=flat-square)](https://travis-ci.org/karagenit/frc-motors)
+[![Code Climate](https://img.shields.io/codeclimate/github/karagenit/frc-motors.svg?style=flat-square)](https://codeclimate.com/github/karagenit/frc-motors)
+[![Gem Version](https://img.shields.io/gem/v/frc-motors.svg?style=flat-square)](https://rubygems.org/gems/frc-motors)
+[![Gem](https://img.shields.io/gem/dt/frc-motors.svg?style=flat-square)](https://rubygems.org/gems/frc-motors)
+
 Ruby Gem for Accessing FRC Motor Data
 
 ## Installation
