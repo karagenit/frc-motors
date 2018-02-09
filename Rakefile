@@ -1,4 +1,4 @@
-task :default => [:clean, :build, :install, :test]
+task :default => [:build, :install, :test]
 
 task :build do
     sh "bundle install"
@@ -11,8 +11,8 @@ task :install do
 end
 
 task :clean do
+    sh "rm -f *.gem"
     sh "gem uninstall frc-motors"
-    sh "rm *.gem"
 end
 
 task :test do
