@@ -40,3 +40,9 @@ $ gem install frc-motors
 ## Data & Reference
 
 All motor data is collected from [Vex Pro's tests](http://motors.vex.com). You can view the actual data files (in CSV format) used in the code [here](https://github.com/karagenit/frc-motors/tree/master/data).
+
+**Supported Motors:**
+
+- CIM
+- MiniCIM
+- BAG
