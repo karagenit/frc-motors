@@ -29,4 +29,5 @@ module Motors
   CIM = Motor.new('cim')
   MiniCIM = Motor.new('mini-cim')
   BAG = Motor.new('bag')
+  Pro775 = Motor.new('775pro')
 end

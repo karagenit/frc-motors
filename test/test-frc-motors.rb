@@ -21,4 +21,10 @@ class TestQuery < Test::Unit::TestCase
     assert_not_nil Motors::BAG.data
     assert_not_nil Motors::BAG.find(:torque, 0.3)
   end
+
+  def test_775pro
+    assert_not_nil Motors::Pro775
+    assert_not_nil Motors::Pro775.data
+    assert_not_nil Motors::Pro775.find(:torque, 0.5)
+  end
 end
