@@ -1,5 +1,8 @@
 # Change Log
 
+## [v1.3.0](https://github.com/karagenit/frc-motors/tree/v1.3.0) (2018-05-15)
+[Full Changelog](https://github.com/karagenit/frc-motors/compare/v1.2.0...v1.3.0)
+
 ## [v1.2.0](https://github.com/karagenit/frc-motors/tree/v1.2.0) (2018-02-09)
 [Full Changelog](https://github.com/karagenit/frc-motors/compare/v1.1.0...v1.2.0)
 
