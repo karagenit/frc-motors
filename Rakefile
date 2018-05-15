@@ -17,7 +17,7 @@ end
 
 task :test do
     sh "./test/test-frc-motors.rb"
-    sh "rubocop lib/frc-motors.rb"
+    #sh "rubocop lib/frc-motors.rb"
 end
 
 task :publish do
